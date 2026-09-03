@@ -1,0 +1,15 @@
+# EventShark
+
+> EventShark is a B2B video production agency for AI, SaaS, and logistics companies. Full-time teams in Austin, New York, and San Francisco, with vetted shooters nationwide. Services: event and conference coverage, customer stories and testimonials, and content, clips and social. Tagline: B2B video, anywhere you need.
+
+## Pages
+- [Services](https://eventshark.io/services): Event coverage, customer stories, content and social clips
+- [Portfolio](https://eventshark.io/portfolio): Selected work by category with client names
+- [About](https://eventshark.io/about): Team, values, and positioning
+- [Contact](https://eventshark.io/contact): Book a call or send project details; market coverage FAQ
+
+## Facts
+- Markets: Austin, New York, San Francisco (full-time teams); nationwide coverage
+- Industries: AI, SaaS, logistics and 3PL, enterprise B2B
+- Engagement: single projects and retainers
+- Contact: ding@eventshark.io
