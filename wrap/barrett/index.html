@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
-<head><meta name="robots" content="noindex, nofollow" />
+<html lang="en" data-preview="true">
+<head><meta http-equiv="Content-Security-Policy" content="connect-src 'self'; form-action 'self'" /><meta name="robots" content="noindex, nofollow" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
+
 <title>Barrett Distribution × EventShark - Forney Content Day · Project Wrap</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -647,6 +647,9 @@ section{padding:56px 0}
   document.querySelectorAll('#stars span').forEach((s,i,all)=>{ s.onclick=()=>all.forEach((x,j)=>x.classList.toggle('on',j<=i)); });
   document.querySelectorAll('.chips span').forEach(c=>c.onclick=()=>c.classList.toggle('on'));
   function submitSurvey(e){e.preventDefault();
+    if(document.documentElement.dataset.preview==='true'||location.hostname.endsWith('.github.io')||['localhost','127.0.0.1'].includes(location.hostname)){
+      toast('Preview only. No feedback was sent or saved.');return false;
+    }
     var rating=document.querySelectorAll('#stars span.on').length;
     var more=[].slice.call(document.querySelectorAll('.chips span.on')).map(function(c){return c.textContent}).join(', ');
     var notes=document.querySelector('.survey textarea').value;
